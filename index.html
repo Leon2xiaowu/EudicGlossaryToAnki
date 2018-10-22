@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>欧陆词典生词本导出转换工具</title>
+    <style>
+      h1, h3 {
+        font-family: Arial;
+      }
+      .drag-container {
+        width: 50vw;
+        height: 50vw;
+        margin: 0 auto;
+        background-color: #e4e4e4;
+        position: relative;
+      }
+      .drag-container::after {
+        content: '';
+        position: absolute;
+        top: 0.5em;
+        bottom: 0.5em;
+        left: 0.5em;
+        right: 0.5em;
+        border: 0.3em dashed #FFF;
+      }
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;        
+        transform: translate(-50%, -50%);
+      }
+      .imp {
+        font-weight: bold;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>欧路词典生词本格式转换</h1>
+    <h5>主要用于将欧陆词典生词本导出的CSV转化格式，方便导入Anki</h5>
+    <h3 class="imp">转换成功后会覆盖源文件，如有需要注意备份！！</h3>
+    <div class="drag-container" id="J_dragFile">
+      <div class="content">
+        将文件拖放此处
+      </div>
+    </div>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "eudic-glossary2anki",
+  "version": "0.0.1",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/jsdtt/EudicGlossaryToAnki",
+  "keywords": [
+    "Electron",
+    "eudic",
+    "anki",
+    "Beta"
+  ],
+  "author": "Jsdtt",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^3.0.4"
+  }
+}
