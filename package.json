@@ -4,7 +4,9 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --mac"
   },
   "repository": "https://github.com/jsdtt/EudicGlossaryToAnki",
   "keywords": [
@@ -13,9 +15,16 @@
     "anki",
     "Beta"
   ],
+  "build": {
+    "appId": "eba021d91b44a97dec2588bbea58a447",
+    "mac": {
+      "category": "tool"
+    }
+  },
   "author": "Jsdtt",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^3.0.4"
+    "electron": "^3.0.4",
+    "electron-builder": "^20.28.4"
   }
 }
